@@ -23,7 +23,7 @@ sudo mount -o umask=000 /dev/mapper/veracrypt1 /home/user/veracrypt1
 This second line tell the system to mount the drive with the option (-o) of "umask=000" (i.e. full access) from the first path to the second path (note, I've replaced my username with "user").
 
 This seemed easy enough! I made a bash script with my two lines of code:
-* [veracrypt_mount.sh](#veracrypt_mount)
+* [veracrypt_mount.sh](#veracrypt_mount.sh)
 I then added my script to the list of startup applications and restarted the computer to test it out.
 
 ## Issue:
