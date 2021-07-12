@@ -24,10 +24,12 @@ This second line tell the system to mount the drive with the option (-o) of "uma
 
 This seemed easy enough! I made a bash script with my two lines of code:
 * [veracrypt_mount.sh](#veracrypt_mount.sh)
+
 I then added my script to the list of startup applications and restarted the computer to test it out.
 
 ## Issue:
 My script didn't work. Initially, at least...
+
 The problem was in the second line:
 <pre>
 <b>sudo</b> mount -o umask=000 /dev/mapper/veracrypt1 /home/user/veracrypt1
@@ -47,10 +49,14 @@ user host = (root) NOPASSWD: /path/to/file
 </pre>
 
 To fast forward a bit, this <i>did</i> work, but only after I realised I needed to add "sudo" to the startup command.
+
 <b>SUCCESS!!</b>
 
 ## Potential Security Issue
 Now I had a working script that would execute fully and mount my drive where I wanted it, with the permissions I wanted. But there was one aspect I wasn't comfortable with: my custom script was located in my home directory. This mean that if someone were to gain access to my computer, they could just modify that script any nothing would stop them.
+
 So the last step I did was to move the script to a location that required root access to edit: /usr/local/bin
+
 Then I just modified the startup command, and /etc/sudoers.d/veracrypt1 to the new location, restarted to test, and everything worked perfectly!
+
 I was now satisfied that I wasn't compromising any security with this script, but it saved my additional manual configuration during login, and allowed me full access to my data, including running system-level applications such as rslsync and, more importantly for this course, <b>git</b>.
