@@ -4,7 +4,7 @@
 read -sp "Please enter your secret password: " secretPassword
 #
 #The password entered is then used to produced a hash, which is compared to the hash stored in the file produced from setPassword.sh.
-echo $secretPassword | sha256sum -c --status "$(whoami)/$(whoami).txt"
+ echo $secretPassword | sha256sum -c --status "$(whoami)/$(whoami).txt"
 #
 #Was the hash check successful? 0=yes, 1=no.
 if [ $? -eq 0 ]
