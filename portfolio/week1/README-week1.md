@@ -1,7 +1,6 @@
 # My attempt at a ((very) slightly) more complex script
 
 ## Background:
-
 I have several physical HDD used across two OS: Pop!_OS (Linux - primary) and Windows 10. All my personal data is on one physical drive, and I use an open-source, cross platform, program called VeraCrypt to encrypt this drive. The issue I was having was that, by default, VeraCrypt would mount the drive as read-only, and this prevented me from using system-level programs such as a P2P syncing program I use, or, more presently, <b>git</b>.
 
 By doing a bit of web research, along with:
