@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 #Run the passwordProtected script.
-./passwordProtected.sh
+./passwordCheck.sh
 #
 #If the passwordProtected script ran correctly (i.e. user entered correct password), then give the following three options. Otherwise, exit with code 1.
 if [ $? -eq 0 ]
