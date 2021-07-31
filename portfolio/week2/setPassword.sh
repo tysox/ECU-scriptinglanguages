@@ -7,12 +7,12 @@ echo
 #If the directory doesn't exist, create it. If it does, then do nothing.
 if [ ! -d "$(whoami)" ]
 then
-  mkdir $(whoami)
+  mkdir ../week2/$(whoami)
 fi
 #
 #Calculates the hash of the secretPassword var, and prints that value into a "username".txt file, within the folderName dictated.
 #The > ensures that if there is a file already there, it's overwritten.
-echo $secretPassword | sha256sum > ./$(whoami)/$(whoami).txt
+echo $secretPassword | sha256sum > ../week2/$(whoami)/$(whoami).txt
 #
 #If the script ran correctly, then a success message is displayed. If it didn't, then a different message (and exit code) is displayed.
 if [ $? -eq 0 ]
