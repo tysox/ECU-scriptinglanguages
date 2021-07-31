@@ -5,7 +5,7 @@ read -sp "Enter password : " secretPassword
 echo
 #
 #If the directory doesn't exist, create it. If it does, then do nothing.
-if [ ! -d "$(whoami)" ]
+if [ ! -d "../week2/$(whoami)" ]
 then
   mkdir ../week2/$(whoami)
 fi
