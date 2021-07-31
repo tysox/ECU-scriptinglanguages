@@ -12,8 +12,8 @@ then
   exit 1
 fi
 #
-#
-until [ ]
+#Display a menu requesting user to make a choice from the available options
+until [ ]     #Whenever a script completes, display this menu again.
 do
   echo
   echo -e "\t\e[3;4;35;100mSelect an option:\e[0m"
@@ -39,7 +39,8 @@ do
     5) ../week3/megafoldermaker.sh;;                    #Selecting 5 runs megafoldermaker.sh script.
     6) ../week3/filenames.sh;;                          #Selecting 6 runs filenames.sh script.
     7) ../week3/downloader.sh;;                         #Selecting 7 runs downloader.sh script.
-    8) echo -e "\e[3;35mGoodbye!\e[0m" ; exit 0;;                        #Selecting 8 exits the script with code 0.
-    *) echo -n -e "\e[1;33mNot a valid option - \e[0m" ; echo -e "\e[3;35mGoodbye.\e[0m" ; exit 0;;    #Selecting anything else returns an error and exits with code 1.
+    8) echo -e "\e[3;35mGoodbye!\e[0m" ; exit 0;;       #Selecting 8 exits the script with code 0.
+                                                        #Selecting anything else returns an error and exits with code 1.
+    *) echo -n -e "\e[1;33mNot a valid option - \e[0m" ; echo -e "\e[3;35mGoodbye.\e[0m" ; exit 0;;
   esac
 done
