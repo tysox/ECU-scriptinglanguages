@@ -1,7 +1,8 @@
 #!/bin/bash
 #
 #User is asked to enter a password, then a new line is created for ease of reading of terminal output.
-read -sp "Enter password : " secretPassword
+secretPasswordprompt=`echo -e "\e[3;93mEnter password : \e[0m"`
+read -sp "$secretPasswordprompt" secretPassword
 echo
 #
 #If the directory doesn't exist, create it. If it does, then do nothing.
@@ -17,9 +18,9 @@ echo $secretPassword | sha256sum > ../week2/$(whoami)/$(whoami).txt
 #If the script ran correctly, then a success message is displayed. If it didn't, then a different message (and exit code) is displayed.
 if [ $? -eq 0 ]
 then
-  echo "Password saved."
+  echo -e "\e[3;32mPassword saved.\e[0m"
   exit 0
 else
-  echo "Password not saved: something went wrong."
+  echo -e "\e[1;3;31mPassword not saved: something went wrong.\e[0m"
   exit 1
 fi
