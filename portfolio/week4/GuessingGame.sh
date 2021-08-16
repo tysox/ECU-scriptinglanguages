@@ -41,6 +41,6 @@ done
 #If the user correctly guesses 42, display a nice flashing sign telling them they're correct.
 if [ $REPLY -eq "42" ]
 then
-    echo -e "\e[1;3;5;32mCORRECT!!\e[0m"
+    echo -e "\e[1;3;5;32mRIGHT!!\e[0m"
     exit 0
 fi
