@@ -1,0 +1,10 @@
+92,Attempts to gain your personal information
+79,Buying or selling
+23,Dating & romance
+17,Fake charities
+37,Investments
+13,Jobs & employment
+44,Threats & extortion
+31,Unexpected money
+37,Unexpected winnings
+6,Other scams

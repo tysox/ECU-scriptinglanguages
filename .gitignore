@@ -6,4 +6,7 @@
 /portfolio/week3/ignore/*
 /portfolio/week5/test.txt
 /portfolio/week6/ignore/*
+/assignment/notes.txt
+/assignment/*.docx
+/assignment/*.mp4
 *.gif

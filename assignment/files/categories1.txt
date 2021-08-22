@@ -1,0 +1,14 @@
+________________________________________________________________
+| [34mScam category                             [0m | [34mNumber of scams[0m |
+----------------------------------------------------------------
+| [93mAttempts to gain your personal information[0m | [95m             92[0m |
+| [93mBuying or selling                         [0m | [95m             79[0m |
+| [93mDating & romance                          [0m | [95m             23[0m |
+| [93mFake charities                            [0m | [95m             17[0m |
+| [93mInvestments                               [0m | [95m             37[0m |
+| [93mJobs & employment                         [0m | [95m             13[0m |
+| [93mThreats & extortion                       [0m | [95m             44[0m |
+| [93mUnexpected money                          [0m | [95m             31[0m |
+| [93mUnexpected winnings                       [0m | [95m             37[0m |
+| [93mOther scams                               [0m | [95m              6[0m |
+________________________________________________________________
