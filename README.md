@@ -4,6 +4,6 @@
 - Student #: 10366963
 
 This unit has now been completed.
-Final grade for portfolio: TBA
-Final grade for assignment: TBA
-Final overall grade: TBA
+- Final grade for portfolio: 83.25% (33.30/40)
+- Final grade for assignment: 81.70% (32.68/40)
+- Final overall grade: 84.98%
